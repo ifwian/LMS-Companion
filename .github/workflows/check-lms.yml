@@ -9,6 +9,9 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: notifier
     permissions:
       contents: write  # needed so the workflow can commit state.json back
     steps:
